@@ -1,1 +1,1 @@
-# Blog
+Learning how to create a blog website
