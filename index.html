@@ -1,23 +1,108 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Welcome Ricky Yang's Blog!</title>
+        <title>RY Blog: Home Page</title>
     </head>
     <body>
         <!-- (How to comment) Headings -->
-        <h1>Heading One</h1>
-        <h2>Heading One</h2>
-        <h3>Heading One</h3>
-        <h4>Heading One</h4>
-        <h5>Heading One</h5>
-        <h6>Heading One</h6>
+        <h1>Adventures of a Software Engineer Impressionist!</h1>
 
         <!-- Paragraph -->
         <p>
             My name is Ricky Yang, I am currently a senior at <strong>Northeastern State University</strong>,
             working towards my second bachelor's in computer science!
             <br />
-            Please check out my <a href ="http://www.github.com/yangrhy/" target="_blank">github portfolio!</a>
         </p>
+
+        <!-- Lists -->
+        <ol>
+            <li><a href="http://www.linkedin.com/in/yangrhy/" target="_blank">LinkedIn Portfolio</a></li>
+            <li><a href="http://www.github.com/yangrhy/" target="_blank">Github Portfolio</a></li>
+            <li><a href="blog.html">Blog Page</a></li>        
+
+        </ol>
+
+        <!-- Lists -->
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ricky</td>
+                    <td>Yang</td>
+                    <td>yangrhy@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Forms -->
+        <form action="process.php" method="POST">
+            <div>
+                <label>First Name</label>
+                <input type="text" name="firstName"
+                       placeholder="Enter first name" />
+            </div>
+            <br />
+            <div>
+                <label>Last Name</label>
+                <input type="text" name="lastName"
+                       placeholder="Enter last name" />
+
+            </div>
+            <br />
+            <div>
+                <label>Email</label>
+                <input type="email" name="email"
+                       placeholder="Enter email" />
+            </div>
+            <br />
+            <div>
+                <label>Message</label>
+                <textarea type="message" name="message" placeholder="Leave me a message!"></textarea>
+            </div>
+            <br />
+            <div>
+                <label>Gender</label>
+                <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="male">Female</option>
+                    <option value="male">Prefer Not To Say</option>
+                </select>
+            </div>
+            <br />
+            <input type="submit" name="submit" value="Submit" />
+        </form>
+        <!-- Button -->
+        <button>Click Me</button>
+        <!-- Need to use Javascript to add functionality-->
+        <!-- i.e. <button> click="someFunction">Click Me</button>-->
+        <br />
+        <!-- Image -->
+        <a href="C:\Users\Huechi\Pictures\itsmeee.jpg">
+            <img src="C:/Users/Huechi/Pictures/itsmeee.jpg"
+                 alt="My Sample Image"
+                 width="100" />
+        </a>
+        <!-- Quotations -->
+        <blockquote cite="http://rickyyang.com/">
+            This is me. Click to enlarge.    
+        </blockquote> <!--Where the quote comes from, citation.-->
+
+        <p>The <abbr title="World Wide Web">WWW</abbr>
+            is awesome
+        </p>
+
+        <p>Learning HTML for the first time from Brad Traversyat 
+            <cite>
+                <a href="https://www.youtube.com/watch?v=UB1O30fR-EE&list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU"
+                   target="_blank"> HTML Crash Course</a>
+                <!--HTML5 Semantic Tags @49:25 in video-->
+            </cite>
+        </p>
+        <div style="margin-top:500px"></div>
     </body>
 </html>
