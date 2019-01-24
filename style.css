@@ -1,0 +1,30 @@
+body {
+    background-color: ActiveCaption;
+    color: white;
+    font-family: 'Comic Sans MS';
+    margin: 0;
+}
+#heading1 {
+    color: white;
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    background-color: slategray;
+    border: black 5px solid;
+}
+.container{
+    width:80%; /*use % rather than px if you want it to auto adjust to window size*/
+    margin:auto;
+}
+.about {
+    background-color:#333333;
+    color: white;
+    font-family: Arial;
+    border: 5px green solid;
+    padding: 10px;
+    margin: 20px 0;
+}
+.about h2{
+    text-align:center;
+    font-family:Arial;
+    font-style:italic;
+}
