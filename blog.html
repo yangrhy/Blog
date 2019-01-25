@@ -1,76 +1,155 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Ricky Yang Blog</title>
-        <meta name="description" content="Awesome blog by Ricky Yang" />
-        <meta name="keywords" content="web design blog, web dev blog, ricky yang" />
-        <style type="text/css">
-            #main-header{
-                text-align:center;
-                background-color:midnightblue;
-                color:white;
-                padding:10px;
-            }
+<!--
 
-            #main-footer{
-                text-align:center;
-                font-size:18px;
-            }
-        </style>
-    </head>
-    <body>
-        <header id="main-header">
-            <h1>Welcome to my blog!</h1>
-        </header>
-        <a href="index.html">Home Page</a>
-        <section>
-            <!--Main area of the page-->
-            <article>
-                <!--Create new article for each blog post-->
-                <h3>First Blog Post</h3>
-                <small>Posted by Ricky Yang on January 24, 2019 9:04 AM</small>
-                <p>
-                    I am currently trying to learn some HTML to create my own personal website. <br />
-                    Hopefully later today, I will have time to continue learning CSS to add this site.
-                </p>
-                <a href="post.html">Read More</a>
-            </article>
+<!-- Lists
+<table>
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Ricky</td>
+            <td>Yang</td>
+            <td>yangrhy@gmail.com</td>
+        </tr>
+    </tbody>
+</table>
+<!-- Forms
+<form action="process.php" method="POST">
+    <div>
+        <label>First Name</label>
+        <input type="text" name="firstName"
+               placeholder="Enter first name" />
+    </div>
+    <br />
+    <div>
+        <label>Last Name</label>
+        <input type="text" name="lastName"
+               placeholder="Enter last name" />
 
-            <article>
-                <!--Create new article for each blog post-->
-                <h3>Second Blog Post</h3>
-                <small>Posted by Ricky Yang on January 24, 2019 9:04 AM</small>
-                <p>
-                    I am currently trying to learn some HTML to create my own personal website. <br />
-                    Hopefully later today, I will have time to continue learning CSS to add this site.
-                </p>
-                <a href="post.html">Read More</a>
-            </article>
+    </div>
+    <br />
+    <div>
+        <label>Email</label>
+        <input type="email" name="email"
+               placeholder="Enter email" />
+    </div>
+    <br />
+    <div>
+        <label>Message</label>
+        <textarea type="message" name="message" placeholder="Leave me a message!"></textarea>
+    </div>
+    <br />
+    <div>
+        <label>Gender</label>
+        <select name="gender">
+            <option value="male">Male</option>
+            <option value="male">Female</option>
+            <option value="male">Prefer Not To Say</option>
+        </select>
+    </div>
+    <br />
+    <input type="submit" name="submit" value="Submit" />
+</form>
+<!-- Button
+<button>Click Me</button>
+<!-- Need to use Javascript to add functionality-->
+<!-- i.e. <button> click="someFunction">Click Me</button>
+<br />
+<!-- Quotations
+<blockquote cite="http://rickyyang.com/">
+    This is me. Click to enlarge.
+</blockquote> <!--Where the quote comes from, citation.
 
-            <article>
-                <!--Create new article for each blog post-->
-                <h3>Third Blog Post</h3>
-                <small>Posted by Ricky Yang on January 24, 2019 9:04 AM</small>
-                <p>
-                    I am currently trying to learn some HTML to create my own personal website. <br />
-                    Hopefully later today, I will have time to continue learning CSS to add this site.
-                </p>
-                <a href="post.html">Read More</a>
-            </article>
-        </section>
-        <!--SIDEBAR-->
-        <aside>
-            <h3>Categories</h3>
-            <nav>
-                <ul>
-                    <li><a href="#"></a>Category 1</li> <!--# indicates it will just stay on same page-->
-                    <li><a href="#"></a>Category 2</li>
-                    <li><a href="#"></a>Category 3</li>
-                </ul>
-            </nav>            
-        </aside>
-        <footer id="main-footer">
-            <p>Copyright &copy; 2019, Ricky Yang Website</p> <!--&copy; = copyright symbol-->
-        </footer>
-    </body>
+<p>
+    The <abbr title="World Wide Web">WWW</abbr>
+    is awesome
+</p>
+
+<p>
+    Learning HTML for the first time from Brad Traversy at
+    <cite>
+        <a href="https://www.youtube.com/watch?v=UB1O30fR-EE&list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU"
+           target="_blank">HTML Crash Course</a>
+        <!--HTML5 Semantic Tags @49:25 in video
+    </cite>
+</p> -->
+<head>
+    <title>Ricky Yang Blog</title>
+    <meta name="description" content="Awesome blog by Ricky Yang" />
+    <meta name="keywords" content="software, software engineer, web design blog, web dev blog, ricky yang" />
+    <style type="text/css">
+        #main-header {
+            text-align: center;
+            background-color: midnightblue;
+            color: white;
+            padding: 10px;
+        }
+
+        #main-footer {
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <h1>Welcome to my blog!</h1>
+    </header>
+    <a href="index.html">Home Page</a>
+    <section>
+        <!--Main area of the page-->
+        <article>
+            <!--Create new article for each blog post-->
+            <h3>First Blog Post</h3>
+            <small>Posted by Ricky Yang on January 24, 2019 9:04 AM</small>
+            <p>
+                I am currently trying to learn some HTML to create my own personal website. <br />
+                Hopefully later today, I will have time to continue learning CSS to add this site.
+            </p>
+            <a href="post.html">Read More</a>
+        </article>
+
+        <article>
+            <!--Create new article for each blog post-->
+            <h3>Second Blog Post</h3>
+            <small>Posted by Ricky Yang on January 24, 2019 9:04 AM</small>
+            <p>
+                I am currently trying to learn some HTML to create my own personal website. <br />
+                Hopefully later today, I will have time to continue learning CSS to add this site.
+            </p>
+            <a href="post.html">Read More</a>
+        </article>
+
+        <article>
+            <!--Create new article for each blog post-->
+            <h3>Third Blog Post</h3>
+            <small>Posted by Ricky Yang on January 24, 2019 9:04 AM</small>
+            <p>
+                I am currently trying to learn some HTML to create my own personal website. <br />
+                Hopefully later today, I will have time to continue learning CSS to add this site.
+            </p>
+            <a href="post.html">Read More</a>
+        </article>
+    </section>
+    <!--SIDEBAR-->
+    <aside>
+        <h3>Categories</h3>
+        <nav>
+            <ul>
+                <li><a href="#"></a>Category 1</li> <!--# indicates it will just stay on same page-->
+                <li><a href="#"></a>Category 2</li>
+                <li><a href="#"></a>Category 3</li>
+            </ul>
+        </nav>
+    </aside>
+    <footer id="main-footer">
+        <p>Copyright &copy; 2019, Ricky Yang Website</p> <!--&copy; = copyright symbol-->
+    </footer>
+</body>
 </html>
